@@ -44,19 +44,20 @@
 
     
     <!-- Custom styles for this template -->
-    <link href="style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="text-center">
     
 <main class="form-signin">
-  <form>
+  <form method="POST" action="/">
     <img class="mb-4" src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
     <h1 class="h3 mb-3 fw-normal">Signup to My Newletter!</h1>
-    <input type="text" class="form-control" placeholder="First Name" required autofocus>
-    <input type="text" class="form-control" placeholder="Last Name" required>
-    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
-    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+
+    <input type="text" name="fName" class="form-control top" placeholder="First Name" required autofocus>
+    <input type="text" name="lName" class="form-control middle" placeholder="Last Name" required>
+    <input type="email" name="email" class="form-control bottom" placeholder="Email" required>
     <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+
     <p class="mt-5 mb-3 text-muted">&copy; Lĩnh Phạm</p>
   </form>
 </main>
